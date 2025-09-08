@@ -1,7 +1,7 @@
 package vn.io.nghlong3004.message_queue.model.dto;
 
-import vn.io.nghlong3004.message_queue.model.Message;
+import java.sql.Timestamp;
 
-public record ConsumerResponse(Message message) {
+public record ConsumerResponse(String senderName, String content, Timestamp created) {
 
 }
